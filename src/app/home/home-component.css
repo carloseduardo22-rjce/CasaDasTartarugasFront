@@ -1,0 +1,209 @@
+/* Typography imported from Google Fonts */
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display|Source+Sans+Pro:200,400');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #E2E2E2;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Playfair Display', serif;
+}
+
+p {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+a {
+    background-color: #666666;
+    text-decoration: none;
+    color: white;
+    border-radius: .25rem;
+    text-align: center;
+    display: inline-block;
+    transition: all .3s;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+a:hover {
+    opacity: .6;
+}
+
+.o-header {
+    display: flex;
+    justify-content: center;
+    height: 50px;
+    background-color: black;
+}
+
+.container {
+    display: flex;
+    width: 1200px;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.navegation {
+    margin-right: 150px;
+}
+
+.navegation ul {
+    display: flex;
+    list-style-type: none;
+}
+
+.navegation ul li {
+    margin-right: 20px;
+}
+
+.navegation ul li a {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 100;
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+    background-color: transparent;
+    padding: 10px;
+}
+
+.navegation.mobile-menu {
+    display: none;
+}
+
+.hero {
+    height: 400px;
+    background: url('/assets/images/casa-das-tartarugas-view.jpg') center;
+    background-size: cover;
+    padding: 4rem 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: inherit;
+    filter: brightness(30%);
+    z-index: 1;
+}
+
+.hero>* {
+    position: relative;
+    color: white;
+    z-index: 2;
+}
+
+.hero>h1 {
+    font-size: 2rem;
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 70px;
+    font-weight: 100;
+    font-style: normal;
+}
+
+.hero>h2 {
+    font-family: "Playfair Display SC", serif;
+    font-weight: 400;
+    font-size: 70px;
+    font-style: normal;
+}
+
+.hero>article>p {
+    font-size: 1.5rem;
+    font-weight: 200;
+}
+
+.hero>article>a {
+    padding: .75rem;
+    margin-top: .75rem;
+}
+
+.breweries {
+    padding: 2rem;
+}
+
+.breweries>ul {
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 1rem;
+}
+
+.breweries>ul>li {
+    border: 1px solid #E2E2E2;
+    border-radius: .5rem;
+}
+
+.breweries>ul>li>figure {
+    max-height: 220px;
+    overflow: hidden;
+    border-top-left-radius: .5rem;
+    border-top-right-radius: .5rem;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.breweries>ul>li>figure>img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* Faz a imagem cobrir completamente o contêiner */
+}
+
+.breweries>ul>li>figure>figcaption {
+    position: absolute;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, .7);
+    width: 100%;
+}
+
+.breweries>ul>li>figure>figcaption>h3 {
+    color: white;
+    padding: .75rem;
+    font-size: 1.25rem;
+}
+
+.breweries>ul>li>p {
+    font-size: 1rem;
+    line-height: 1.5;
+    padding: 1rem .75rem;
+    color: #666666;
+}
+
+.breweries>ul>li>a {
+    padding: .5rem 1rem;
+    margin: .5rem;
+}
+
+footer {
+    background-color: #333;
+    padding: .75rem;
+    color: white;
+    text-align: center;
+    font-size: .75rem;
+}
