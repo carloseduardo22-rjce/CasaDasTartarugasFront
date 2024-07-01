@@ -41,7 +41,7 @@
     padding: 10px;
 }
 
-a::after {
+.navegation ul li a::after {
     content: '';
     position: absolute;
     width: 0;
@@ -53,7 +53,7 @@ a::after {
     transition: all 0.3s ease-in-out;
 }
 
-a:hover::after {
+.navegation ul li a:hover::after {
     visibility: visible;
     width: 100%;
 }
@@ -79,7 +79,7 @@ a:hover::after {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     list-style-type: none;
 }
 
@@ -94,22 +94,25 @@ a:hover::after {
     color: black;
     font-weight: 200;
     font-style: normal;
-    font-size: 16px;
+    font-size: 25px;
 }
 
 .sidebar ul li a:hover {
-    text-decoration: none;
-    font-family: "Raleway", sans-serif;
-    font-size: 20px;
-    font-optical-sizing: auto;
-    color: black;
     font-weight: 400;
-    font-style: normal;
 }
 
 /* Classe para mostrar a barra lateral */
 .sidebar.active {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 320px;
     right: 0;
+}
+
+.nav-sidebar {
+    margin-top: -135px;
+    padding: 30px 36px;
 }
 
 .hamburguer i {
@@ -147,7 +150,52 @@ a:hover::after {
     font-style: normal;
 }
 
+.sign-in {
+    padding: 48px 36px;
+}
+
+.sign-in h4 {
+    font-family: "Raleway", sans-serif;
+    font-weight: 200;
+    color: black;
+}
+
+.register-sidebar {
+    display: flex;
+    margin-top: 20px;
+}
+
+.register-sidebar a {
+    margin-right: 10px;
+}
+
+.register-sidebar button {
+    background-color: #000;
+    /* Cor de fundo preta */
+    color: #fff;
+    /* Cor do texto branca */
+    padding: 5px 10px;
+    /* Ajusta o preenchimento interno */
+    border: none;
+    /* Remove a borda padrão */
+    border-radius: 20px;
+    /* Adiciona curvatura às bordas */
+    font-size: 16px;
+    /* Ajusta o tamanho da fonte */
+    cursor: pointer;
+    /* Muda o cursor para uma mãozinha quando sobre o botão */
+}
+
+.register-sidebar button:hover {
+    background-color: #333;
+    /* Cor de fundo quando o botão é focado */
+}
+
 @media screen and (max-width: 768px) {
+    .register {
+        display: none;
+    }
+
     .navegation {
         display: none;
     }

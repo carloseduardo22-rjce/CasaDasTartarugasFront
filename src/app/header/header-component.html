@@ -25,12 +25,25 @@
         </div>
     </div>
     <div [ngClass]="{'sidebar': true, 'active': sidebarActive}" id="sidebar">
-        <ul>
-            <li><a href="#">CASA</a></li>
-            <li><a href="#">INSTALAÇÕES</a></li>
-            <li><a href="#">QUARTOS</a></li>
-            <li><a href="#">CONTACTE-NOS</a></li>
-        </ul>
+        <div class="nav-sidebar">
+            <ul>
+                <li><a href="#">CASA</a></li>
+                <li><a href="#">INSTALAÇÕES</a></li>
+                <li><a href="#">QUARTOS</a></li>
+                <li><a href="#">CONTACTE-NOS</a></li>
+            </ul>
+        </div>
+        <div class="sign-in">
+            <h4>Cadastre-se para acompanhar os seus pedidos.</h4>
+            <div class="register-sidebar">
+                <a href="#">
+                    <button>Login</button>
+                </a>
+                <a href="#">
+                    <button>Register</button>
+                </a>
+            </div>
+        </div>
     </div>
     <div class="backdrop" *ngIf="sidebarActive" (click)="closeSidebar()"></div>
 </header>
