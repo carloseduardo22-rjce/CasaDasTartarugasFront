@@ -101,7 +101,6 @@
     font-weight: 400;
 }
 
-/* Classe para mostrar a barra lateral */
 .sidebar.active {
     display: flex;
     flex-direction: column;
@@ -171,24 +170,16 @@
 
 .register-sidebar button {
     background-color: #000;
-    /* Cor de fundo preta */
     color: #fff;
-    /* Cor do texto branca */
     padding: 5px 10px;
-    /* Ajusta o preenchimento interno */
     border: none;
-    /* Remove a borda padrão */
     border-radius: 20px;
-    /* Adiciona curvatura às bordas */
     font-size: 16px;
-    /* Ajusta o tamanho da fonte */
     cursor: pointer;
-    /* Muda o cursor para uma mãozinha quando sobre o botão */
 }
 
 .register-sidebar button:hover {
     background-color: #333;
-    /* Cor de fundo quando o botão é focado */
 }
 
 @media screen and (max-width: 768px) {
