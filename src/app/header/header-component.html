@@ -27,10 +27,10 @@
     <div [ngClass]="{'sidebar': true, 'active': sidebarActive}" id="sidebar">
         <div class="nav-sidebar">
             <ul>
-                <li><a href="#">CASA</a></li>
-                <li><a href="#">INSTALAÇÕES</a></li>
-                <li><a href="#">QUARTOS</a></li>
-                <li><a href="#">CONTACTE-NOS</a></li>
+                <li><a [routerLink]="['/']" (click)="closeSidebar()">CASA</a></li>
+                <li><a href="#" (click)="closeSidebar()">INSTALAÇÕES</a></li>
+                <li><a [routerLink]="['/quartos']" (click)="closeSidebar()">QUARTOS</a></li>
+                <li><a href="#" (click)="closeSidebar()">CONTACTE-NOS</a></li>
             </ul>
         </div>
         <div class="sign-in">
