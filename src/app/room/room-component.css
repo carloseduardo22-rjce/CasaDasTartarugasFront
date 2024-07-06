@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
 
 
 * {
@@ -13,6 +14,8 @@
     font-size: 10px;
     color: white;
     padding: 20px;
+    margin-top: 40px;
+    margin-bottom: 20px;
 }
 
 .content-text {
@@ -20,18 +23,20 @@
 }
 
 .content h1 {
-    font-family: "Playfair Display SC", serif;
+    font-family: "Fjalla One", sans-serif;
     font-weight: 400;
-    font-size: 70px;
     font-style: normal;
+    font-size: 40px;
     color: white;
+    border-bottom: 1px solid white;
+    padding-bottom: 5px;
 }
 
 .video-container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: black;
+    background: radial-gradient(circle, rgba(125, 194, 221, 0.90) -150%, rgba(0, 0, 0, 1) 100%);
 }
 
 .cards {
@@ -44,7 +49,7 @@
 .video-card {
     background-color: white;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
     overflow: hidden;
     margin-top: 10px;
     margin-bottom: 10px;
@@ -93,8 +98,8 @@
 .rectangle {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 35px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
     overflow: hidden;
     max-width: 1050px;
     width: 90%;
@@ -118,8 +123,27 @@
     font-weight: 400;
     margin-top: 10px;
     font-style: normal;
-    font-size: 0.75rem;
+    font-size: 0.90rem;
     color: white;
+}
+
+.beach {
+    color: #40E0D0;
+}
+
+.suites {
+    border-bottom: 1px solid white;
+}
+
+.unforgettable {
+    position: absolute;
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    color: #40E0D0;
+    font-size: 110px;
+    z-index: 2;
 }
 
 .image-content img {
@@ -163,10 +187,25 @@
 
     .content h1 {
         font-size: 40px;
+        padding-bottom: 15px;
     }
 
-    .overlay-text {
-        top: 440px;
-        font-size: 20px;
+    .overlay-container {
+        display: none;
+    }
+
+    .unforgettable {
+        font-size: 40px;
+        left: 108px;
+    }
+
+    .bar {
+        margin-bottom: -15px;
+    }
+}
+
+@media (max-width: 500px) {
+    .unforgettable {
+        left: 150px;
     }
 }
