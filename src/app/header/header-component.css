@@ -12,17 +12,6 @@
     position: relative;
 }
 
-.header-background {
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 790px;
-    height: 100%;
-    background-color: black;
-    clip-path: polygon(60% 0, 100% 0, 100% 100%, 50% 100%);
-    z-index: 0;
-}
-
 .container {
     display: flex;
     width: 1200px;
@@ -154,11 +143,11 @@
     align-items: center;
     margin-left: 10px;
     font-size: 16px;
-    border: 1px solid white;
+    border: 1px solid black;
     border-radius: 20px;
     height: 35px;
     padding: 10px 15px;
-    color: white;
+    color: black;
     background-color: transparent;
     font-family: "Raleway", sans-serif;
     font-weight: 300;
