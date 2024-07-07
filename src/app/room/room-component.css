@@ -185,6 +185,40 @@
     height: 480px;
 }
 
+.amenities-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+    justify-items: center;
+    align-items: center;
+}
+
+.amenity-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    width: 100px;
+    height: 120px;
+}
+
+.amenity-item img {
+    max-width: 50px;
+    margin-bottom: 10px;
+}
+
+.amenity-item p {
+    margin: 0;
+    font-size: 14px;
+    color: #333;
+}
+
 @media (max-width: 768px) {
     .rectangle {
         grid-template-columns: 1fr;
@@ -214,4 +248,9 @@
     .unforgettable {
         left: 150px;
     }
+
+    .feedback {
+        height: 1000px;
+    }
+
 }
