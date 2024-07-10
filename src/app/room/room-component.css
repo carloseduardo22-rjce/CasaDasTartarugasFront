@@ -89,69 +89,12 @@
     padding: 0 10px 20px;
 }
 
-.rectangle-section {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 20px;
-    padding: 35px;
-    z-index: 0;
-}
-
-.rectangle {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    border-radius: 35px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
-    overflow: hidden;
-    max-width: 1050px;
-    width: 90%;
-    margin: 0 auto;
-}
-
-.text-content {
-    padding: 25px;
-}
-
-.text-content h1 {
-    font-family: "Fjalla One", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 2.5rem;
-    color: white;
-}
-
-.text-content p {
-    font-family: "Fjalla One", sans-serif;
-    font-weight: 400;
-    margin-top: 10px;
-    font-style: normal;
-    font-size: 0.90rem;
-    color: white;
-}
-
 .beach {
     color: #40E0D0;
 }
 
 .suites {
     border-bottom: 1px solid white;
-}
-
-.unforgettable {
-    position: absolute;
-    font-family: "Dancing Script", cursive;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
-    color: #40E0D0;
-    font-size: 110px;
-    z-index: 2;
-}
-
-.image-content img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
 }
 
 .bar {
@@ -162,95 +105,75 @@
     background-color: white;
 }
 
-.overlay-text {
-    position: absolute;
-    top: 30px;
-    left: 75%;
-    transform: translate(-50%, -50%);
-    font-family: "Playfair Display SC", serif;
+.section-suites {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1rem;
+    width: 90%;
+    margin-bottom: 30px;
+    border-radius: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
+    overflow: hidden;
+    height: 465px;
+}
+
+.suite-text {
+    padding: 30px;
+}
+
+.suite-text h1 {
+    font-family: "Fjalla One", sans-serif;
     font-weight: 400;
-    font-size: 40px;
     font-style: normal;
     color: white;
-    z-index: 1;
 }
 
-.overlay-container {
-    position: relative;
+.suite-text p {
+    font-family: "Fjalla One", sans-serif;
+    font-weight: 400;
+    margin-top: 20px;
+    font-style: normal;
+    font-size: 0.90rem;
+    color: white;
+}
+
+.suite-image img {
     width: 100%;
     height: 100%;
+    object-fit: cover;
 }
 
-.feedback {
-    height: 480px;
-}
-
-.amenities-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-    padding: 20px;
-    justify-items: center;
-    align-items: center;
-}
-
-.amenity-item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background: #f9f9f9;
-    border-radius: 10px;
+.carousel {
+    width: 90%;
+    margin: 0 auto;
+    border-radius: 30px;
+    overflow: hidden;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    text-align: center;
-    width: 100px;
-    height: 120px;
+    height: 600px;
 }
 
-.amenity-item img {
-    max-width: 50px;
-    margin-bottom: 10px;
+.carousel img {
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+    display: block;
 }
 
-.amenity-item p {
-    margin: 0;
-    font-size: 14px;
-    color: #333;
-}
-
-@media (max-width: 768px) {
-    .rectangle {
-        grid-template-columns: 1fr;
-        max-width: 100%;
-    }
-
-    .content h1 {
-        font-size: 40px;
-        padding-bottom: 15px;
-    }
-
-    .overlay-container {
-        display: none;
-    }
-
-    .unforgettable {
-        font-size: 40px;
-        left: 108px;
-    }
-
-    .bar {
-        margin-bottom: -15px;
-    }
+.carousel-caption {
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 1rem;
+    border-radius: 5px;
 }
 
 @media (max-width: 500px) {
-    .unforgettable {
-        left: 150px;
+    .section-suites {
+        grid-template-columns: 1fr;
+        height: 840px;
+        margin-bottom: 30px;
     }
-
-    .feedback {
-        height: 1000px;
-    }
-
 }

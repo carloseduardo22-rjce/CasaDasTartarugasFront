@@ -37,85 +37,52 @@
         </div>
     </div>
     <div class="bar"></div>
-    <div class="overlay-container">
-        <div class="overlay-text">
-            <h1>
-                A <span class="beach">praia</span>
-            </h1>
+    <section class="section-suites">
+        <div class="suite-text">
+            <h1>Sobre as suítes</h1>
+            <p>
+                Descubra a excelência das nossas suítes, onde o luxo e o conforto se encontram em perfeita
+                harmonia. Cada suíte do nosso hotel oferece uma vista deslumbrante para o mar,
+                proporcionando um cenário perfeito para relaxar e descontrair.
+            </p>
+            <p>
+                Os interiores são meticulosamente decorados com um toque de elegância moderna e aconchegante. Desde
+                a suave roupa de cama de algodão até aos detalhes requintados da decoração, cada elemento
+                foi pensado para garantir a sua máxima satisfação.
+            </p>
+            <p>
+                Acorde com a brisa suave do mar e adormeça ao som das ondas, envolvido em um ambiente de limpeza
+                impecável e tranquilidade absoluta. Nosso serviço de quarto dedicado está sempre à disposição para
+                atender a todas as suas necessidades, garantindo que sua estadia seja verdadeiramente inesquecível.
+            </p>
+            <p>
+                Seja bem-vindo ao refúgio perfeito, onde cada momento é uma experiência única de luxo e serenidade.
+            </p>
         </div>
-    </div>
-    <div class="rectangle-section">
-        <div class="rectangle">
-            <div class="text-content">
-                <h1>
-                    Sobre as <span class="suites">suites</span>
-                </h1>
-                <p>
-                    Descubra a excelência das nossas suítes, onde o luxo e o conforto se encontram em perfeita
-                    harmonia. Cada suíte do nosso hotel oferece uma vista deslumbrante para o mar,
-                    proporcionando um cenário perfeito para relaxar e descontrair.
-                </p>
-                <p>
-                    Os interiores são meticulosamente decorados com um toque de elegância moderna e aconchegante. Desde
-                    a suave roupa de cama de algodão até aos detalhes requintados da decoração, cada elemento
-                    foi pensado para garantir a sua máxima satisfação.
-                </p>
-                <p>
-                    Acorde com a brisa suave do mar e adormeça ao som das ondas, envolvido em um ambiente de limpeza
-                    impecável e tranquilidade absoluta. Nosso serviço de quarto dedicado está sempre à disposição para
-                    atender a todas as suas necessidades, garantindo que sua estadia seja verdadeiramente inesquecível.
-                </p>
-                <p>
-                    Seja bem-vindo ao refúgio perfeito, onde cada momento é uma experiência única de luxo e serenidade.
-                </p>
-                <h2 class="unforgettable">
-                    Inesquecível
-                </h2>
-            </div>
-            <div class="image-content">
-                <img src="/assets/images/Beach3.jpg" alt="Beach">
-            </div>
+        <div class="suite-image">
+            <img src="/assets/images/room.jpg" alt="Room">
         </div>
-    </div>
-    <div class="rectangle-section">
-        <div class="rectangle feedback">
-            <div class="text-content">
-                <h1>
-                    Feedback
-                </h1>
-                <p>
-                    "Ficar em uma das suítes deste hotel foi simplesmente maravilhoso. Desde o momento em que chegamos,
-                    fomos recebidos com uma hospitalidade incrível e um atendimento impecável. A suíte estava
-                    impecavelmente limpa, com uma decoração elegante e uma vista deslumbrante do mar. As camas eram
-                    extremamente confortáveis, proporcionando noites de sono tranquilo e revigorante. O
-                    serviço de quarto era rápido e eficiente, atendendo a todas as nossas necessidades. Além disso, o
-                    café da manhã oferecia uma grande variedade de opções deliciosas, atendendo a todos os gostos.
-                </p>
-                <p>
-                    A área da piscina foi um verdadeiro oásis de relaxamento, onde pudemos descontrair e
-                    aproveitar o ambiente tranquilo. A localização do hotel também é excelente, com fácil acesso a
-                    diversas atrações e restaurantes. Sem dúvida, foi uma experiência memorável e voltaremos com
-                    certeza. Recomendo este hotel a todos que
-                    buscam uma estadia de luxo e conforto. Parabéns a toda a equipe pelo excelente trabalho!"
-                </p>
-            </div>
-            <div class="image-content">
-                <img src="/assets/images/boy-feedback.jpg" alt="Boy">
-            </div>
-        </div>
-    </div>
-    <div class="amenities-container">
-        <div class="amenity-item">
-            <img src="/assets/images/wi-fi.png" alt="Free Wifi">
-            <p>Free Wifi</p>
-        </div>
-        <div class="amenity-item">
-            <img src="/assets/images/cafe-da-manha.png" alt="Breakfast">
-            <p>Breakfast</p>
-        </div>
-        <div class="amenity-item">
-            <img src="/assets/images/piscina.png" alt="Swimming Pool">
-            <p>Swimming Pool</p>
-        </div>
+    </section>
+    <div class="carousel">
+        <carousel [noPause]="false">
+            <slide>
+                <img src="assets/images/Beach3.jpg" alt="primeiro slide">
+                <div class="carousel-caption d-none d-md-block">
+                    <h1>Suite 1</h1>
+                </div>
+            </slide>
+            <slide>
+                <img src="assets/images/boy-feedback.jpg" alt="segundo slide">
+                <div class="carousel-caption d-none d-md-block">
+                    <h1>Suíte 2</h1>
+                </div>
+            </slide>
+            <slide>
+                <img src="assets/images/cara-passeio.jpg" alt="terceiro slide">
+                <div class="carousel-caption d-none d-md-block">
+                    <h1>Suíte 3</h1>
+                </div>
+            </slide>
+        </carousel>
     </div>
 </div>
