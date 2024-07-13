@@ -11,6 +11,9 @@ import { CarouselModule } from 'ngx-bootstrap/carousel';
 })
 export class RoomComponent implements OnInit {
 
+  isAnimated = true;
+  interval = 0;
+
   ngOnInit() {
 
   }

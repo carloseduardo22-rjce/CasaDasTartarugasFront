@@ -55,12 +55,6 @@
     margin-bottom: 10px;
     width: 300px;
     text-align: center;
-    transition: transform 0.3s ease;
-}
-
-.video-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 .video-wrapper {
@@ -114,7 +108,7 @@
     border-radius: 30px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
     overflow: hidden;
-    height: 465px;
+    height: 100%;
 }
 
 .suite-text {
