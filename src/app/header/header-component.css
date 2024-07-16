@@ -45,23 +45,6 @@
     padding: 10px;
 }
 
-.navegation ul li a::after {
-    content: '';
-    position: absolute;
-    width: 0;
-    height: 2px;
-    bottom: 3px;
-    left: 0;
-    background-color: black;
-    visibility: hidden;
-    transition: all 0.3s ease-in-out;
-}
-
-.navegation ul li a:hover::after {
-    visibility: visible;
-    width: 100%;
-}
-
 .hamburguer {
     display: none;
 }

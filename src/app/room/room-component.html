@@ -1,4 +1,41 @@
 <div class="video-container">
+    <div class="booking-container">
+        <img src="/assets/images/Play-Soccer.jpg" alt="Play Soccer in the beach" class="background-image">
+        <h1>Garanta a sua suíte</h1>
+        <p>Escolha as datas para encontrar os melhores preços</p>
+        <form (ngSubmit)="onSubmit()" #bookingForm="ngForm" class="booking-form">
+            <div class="date-input">
+                <label for="check-in">Check-in</label>
+                <input type="date" id="check-in" name="checkIn" [(ngModel)]="checkIn" required>
+            </div>
+            <div class="date-input">
+                <label for="check-out">Check-out</label>
+                <input type="date" id="check-out" name="checkOut" [(ngModel)]="checkOut" required>
+            </div>
+            <div class="guests-input">
+                <label for="guests">Hóspedes</label>
+                <div id="guests" class="guests-selector">
+                    <span>{{ rooms }} quarto, {{ adults }} adultos</span>
+                    <div class="guests-dropdown">
+                        <div class="guests-dropdown-item">
+                            <span>Quartos</span>
+                            <button type="button" (click)="decrement('rooms')">-</button>
+                            <input type="number" name="rooms" [(ngModel)]="rooms" min="1" required>
+                            <button type="button" (click)="increment('rooms')">+</button>
+                        </div>
+                        <div class="guests-dropdown-item">
+                            <span>Adultos</span>
+                            <button type="button" (click)="decrement('adults')">-</button>
+                            <input type="number" name="adults" [(ngModel)]="adults" min="1" required>
+                            <button type="button" (click)="increment('adults')">+</button>
+                        </div>
+                        <button type="button" class="btn-update" (click)="updateGuests()">Atualizar</button>
+                    </div>
+                </div>
+            </div>
+            <button type="submit" class="btn-submit">Buscar</button>
+        </form>
+    </div>
     <section class="content">
         <div class="content-text">
             <h1>Desfrute dos vídeos de nossas suítes e suas <span class="beach">belas</span> vistas</h1>
@@ -63,6 +100,9 @@
             <img src="/assets/images/room.jpg" alt="Room">
         </div>
     </section>
+    <div class="carousel-title">
+        <h1>Fotos</h1>
+    </div>
     <div class="carousel">
         <carousel [interval]="interval">
             <slide>
