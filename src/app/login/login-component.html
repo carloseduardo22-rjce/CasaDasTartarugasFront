@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <meta name="google-signin-client_id"
+        content="564146783948-i2fs14r6encrlrq6ppjmuif234celspr.apps.googleusercontent.com">
+    <title>Login Page</title>
+</head>
+
+<body>
+    <div class="login-container">
+        <div class="left"></div>
+        <div class="container-right">
+            <div class="right">
+                <h1>Bem vindo!</h1>
+                <form>
+                    <select name="country-code" id="country-code">
+                        <option value="indonesia">Brasil (+55)</option>
+                    </select>
+                    <input type="text" name="phone-number" placeholder="Celular">
+                    <input type="email" name="email" placeholder="Email">
+                    <input type="password" name="password" placeholder="Senha">
+                    <button type="submit">Criar conta</button>
+                </form>
+                <div class="login-options">
+                    <p>ou</p>
+                    <a href="#">Já possui uma conta? <span>Entrar</span></a>
+                    <button class="social-login google" (click)="loginGoogle()">
+                        <i class="fab fa-google"></i> Continue com o Google
+                    </button>
+                    <button class="social-login facebook">
+                        <i class="fab fa-facebook"></i> Continue com o Facebook
+                    </button>
+                    <button class="social-login twitter">
+                        <i class="fab fa-twitter"></i> Continue com o Twitter
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
